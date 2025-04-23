@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodie's Paradise</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" /> -->
+</head>
+<body>
+    <header class="navbar section">
+      <div class="logo">
+        <a href="#">
+          <img src="logo3.png" alt="Restaurant Logo">
+        </a>
+      </div>
+      
+        <div class="logo">Foodie's Paradise</div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search food...">
+          <button type="button">🔍</button>
+        </div>
+      </header>
+      
+
+  <!-- Hero Section -->
+<header class="hero section" id="hero" >
+    <div class="hero-content">
+      <h1>Foodie's Paradise</h1>
+      <p>Fresh, tasty, and made with love.</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section section" >
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="card">
+        <img src="grilled chicken.jpg" alt="Grilled Chicken">
+        <h3>Grilled Chicken</h3>
+        <p class="price">$12</p>
+      </div>
+      <div class="card">
+        <img src="beef burger.jpg" alt="Beef Burger">
+        <h3>Beef Burger</h3>
+        <p class="price">$10</p>
+      </div>
+      <div class="card">
+        <img src="pasta.jpg" alt="Pasta Alfredo">
+        <h3>Pasta Alfredo</h3>
+        <p class="price">$14</p>
+      </div>
+    </div>
+    <section class="menu-section" id="menu">
+  
+      <button onclick="toggleMenu()" class="see-more-btn" style="border: none;">See More</button>
+    
+      <div class="full-menu" id="fullMenu">
+      <div class="menu-category">
+      <h3>🍗 Starters</h3>
+      <div class="menu-item"><span>French Fries</span><span>Rs. 180</span></div>
+      <div class="menu-item"><span>Garlic Bread</span><span>Rs. 200</span></div>
+      <div class="menu-item"><span>Chicken Wings (6 pcs)</span><span>Rs. 350</span></div>
+      <div class="menu-item"><span>Cheesy Nuggets (8 pcs)</span><span>Rs. 300</span></div>
+      <div class="menu-item"><span>Spring Rolls (4 pcs)</span><span>Rs. 250</span></div>
+      <div class="menu-item"><span>Loaded Nachos</span><span>Rs. 450</span></div>
+      <div class="menu-item"><span>Fish Fingers</span><span>Rs. 500</span></div>
+      <div class="menu-item"><span>Onion Rings</span><span>Rs. 220</span></div>
+      <div class="menu-item"><span>Chicken Popcorn</span><span>Rs. 300</span></div>
+      <div class="menu-item"><span>Chicken Strips</span><span>Rs. 350</span></div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>🍔 Burgers</h3>
+      <div class="menu-item"><span>Zinger Burger</span><span>Rs. 350</span></div>
+      <div class="menu-item"><span>Cheese Burger</span><span>Rs. 400</span></div>
+      <div class="menu-item"><span>Grilled Chicken Burger</span><span>Rs. 380</span></div>
+      <div class="menu-item"><span>Beef Burger</span><span>Rs. 450</span></div>
+      <div class="menu-item"><span>Double Patty Burger</span><span>Rs. 550</span></div>
+      <div class="menu-item"><span>Smoky BBQ Burger</span><span>Rs. 500</span></div>
+      <div class="menu-item"><span>Mushroom Melt Burger</span><span>Rs. 480</span></div>
+      <div class="menu-item"><span>Chicken Fillet Burger</span><span>Rs. 370</span></div>
+      <div class="menu-item"><span>Veggie Burger</span><span>Rs. 300</span></div>
+      <div class="menu-item"><span>Spicy Chicken Burger</span><span>Rs. 360</span></div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>🍕 Pizzas</h3>
+      <div class="menu-item"><span>Chicken Tikka Pizza</span><span>Rs. 1100</span></div>
+      <div class="menu-item"><span>Fajita Pizza</span><span>Rs. 1150</span></div>
+      <div class="menu-item"><span>Supreme Pizza</span><span>Rs. 1300</span></div>
+      <div class="menu-item"><span>Veggie Pizza</span><span>Rs. 1000</span></div>
+      <div class="menu-item"><span>Cheese Lover Pizza</span><span>Rs. 1200</span></div>
+      <div class="menu-item"><span>BBQ Chicken Pizza</span><span>Rs. 1250</span></div>
+      <div class="menu-item"><span>Pepperoni Pizza</span><span>Rs. 1350</span></div>
+      <div class="menu-item"><span>Beef Fajita Pizza</span><span>Rs. 1280</span></div>
+      <div class="menu-item"><span>Margherita Pizza</span><span>Rs. 950</span></div>
+      <div class="menu-item"><span>Mexican Pizza</span><span>Rs. 1180</span></div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>🍗 Barbecue</h3>
+      <div class="menu-item"><span>Chicken Tikka</span><span>Rs. 300</span></div>
+      <div class="menu-item"><span>Malai Boti</span><span>Rs. 500</span></div>
+      <div class="menu-item"><span>Seekh Kebab (2 pcs)</span><span>Rs. 350</span></div>
+      <div class="menu-item"><span>Grilled Fish</span><span>Rs. 650</span></div>
+      <div class="menu-item"><span>Beef Bihari Boti</span><span>Rs. 600</span></div>
+      <div class="menu-item"><span>Chicken Reshmi Kebab</span><span>Rs. 550</span></div>
+      <div class="menu-item"><span>Chargha (Full)</span><span>Rs. 950</span></div>
+      <div class="menu-item"><span>Mutton Chops</span><span>Rs. 800</span></div>
+      <div class="menu-item"><span>Beef Seekh Kebab</span><span>Rs. 400</span></div>
+      <div class="menu-item"><span>Chicken Kastoori Boti</span><span>Rs. 520</span></div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>🥘 Desi Specials</h3>
+      <div class="menu-item"><span>Biryani</span><span>Rs. 450</span></div>
+      <div class="menu-item"><span>Pulao</span><span>Rs. 400</span></div>
+      <div class="menu-item"><span>Chicken Karahi (Half)</span><span>Rs. 700</span></div>
+      <div class="menu-item"><span>Mutton Karahi (Half)</span><span>Rs. 1200</span></div>
+      <div class="menu-item"><span>Daal Chawal</span><span>Rs. 250</span></div>
+      <div class="menu-item"><span>Chicken Handi</span><span>Rs. 850</span></div>
+      <div class="menu-item"><span>Mutton Handi</span><span>Rs. 1400</span></div>
+      <div class="menu-item"><span>Chicken White Karahi</span><span>Rs. 800</span></div>
+      <div class="menu-item"><span>Beef Nihari</span><span>Rs. 550</span></div>
+      <div class="menu-item"><span>Chicken Peshawari Karahi</span><span>Rs. 900</span></div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>🥤 Drinks & Desserts</h3>
+      <div class="menu-item"><span>Mojito</span><span>Rs. 220</span></div>
+      <div class="menu-item"><span>Cold Drink (500ml)</span><span>Rs. 100</span></div>
+      <div class="menu-item"><span>Mango Milkshake</span><span>Rs. 250</span></div>
+      <div class="menu-item"><span>Chocolate Shake</span><span>Rs. 300</span></div>
+      <div class="menu-item"><span>Kheer</span><span>Rs. 180</span></div>
+      <div class="menu-item"><span>Gulab Jamun (2 pcs)</span><span>Rs. 120</span></div>
+      <div class="menu-item"><span>Ice Cream (Single Scoop)</span><span>Rs. 150</span></div>
+      <div class="menu-item"><span>Falooda</span><span>Rs. 350</span></div>
+      <div class="menu-item"><span>Mint Margarita</span><span>Rs. 250</span></div>
+      <div class="menu-item"><span>Strawberry Smoothie</span><span>Rs. 300</span></div>
+    </div>
+    
+  </section>
+  
+  <section id="offers" class="offers-section section" >
+    <h2>Special Offers</h2>
+    <div class="offers-container">
+      
+      <div class="offer-card">
+        <h3>Family Combo</h3>
+        <p>2 Pizzas, 2 Burgers, 4 Drinks</p>
+        <span class="price">$30</span>
+      </div>
+  
+      <div class="offer-card">
+        <h3>Lunch Deal</h3>
+        <p>1 Burger, Fries, Drink</p>
+        <span class="price">$12</span>
+      </div>
+  
+      <div class="offer-card">
+        <h3>Party Pack</h3>
+        <p>4 Pizzas, 4 Burgers, 6 Drinks, 2 Desserts</p>
+        <span class="price">$60</span>
+      </div>
+  
+      <div class="offer-card">
+        <h3>Dessert Duo</h3>
+        <p>2 Cakes, 2 Drinks</p>
+        <span class="price">$18</span>
+      </div>
+  
+    </div>
+  </section>
+  <section id="order" class="order-section section" >
+    <h2>Feeling Hungry?</h2>
+    <p>Order your favorite meals now and get them delivered hot & fresh to your doorstep!</p>
+    <a href="#contact" class="order-btn">Order Now</a>
+  </section>
+  
+  
+
+  <!-- Testimonials -->
+  <section class="testimonials section" >
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"Delicious food and fast service!"</p>
+      <span>– Ayesha</span>
+    </div>
+    <div class="testimonial">
+      <p>"Best food experience in town!"</p>
+      <span>– Ali</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section section" >
+    <h2>Contact Us</h2>
+    <p>📍 123 Food Street, Dera Ismail Khan</p>
+    <p>📞 +92-300-1234567</p>
+    <p>📧 info@foodiesparadise.com</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer section" >
+    <p>&copy; 2025 Foodie's Paradise. All rights reserved.</p>
+  </footer>
+  <script>
+    // Select all sections with the 'section' class
+    const sections = document.querySelectorAll('.section');
+    
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add 'show' class when section comes into view
+          entry.target.classList.add('show');
+          // Stop observing once revealed
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2 // 20% visible before triggering
+    });
+    
+    // Attach observer to each section
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+    </script>
+    
+
+</body>
+</html>
